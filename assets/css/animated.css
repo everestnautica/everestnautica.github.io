@@ -6,6 +6,16 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2014 Daniel Eden
 */
 
+.fuentemain{
+  font-family: 'Rammetto One', cursive;
+}
+
+.cita{
+  font-family: 'Bad Script', cursive;
+}
+
+
+
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
