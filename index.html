@@ -38,6 +38,48 @@ https://templatemo.com/tm-570-chain-app-dev
    
   </head>
 
+
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?73005';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Enviar Mensaje",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Everest Nautica",
+      "brandSubTitle":"Clases de Natación",
+      "brandImg":"assets/images/logoeverest.PNG",
+      "welcomeText":"Buen día! ¿Cómo le puedo ayudar?",
+      "messageText":"Hola. Quisiera información acerca de las clases de Natación.",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Enviar",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"50688690548"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+
+
+
+
 <body>
 
   <!-- ***** Preloader Start ***** -->
@@ -67,13 +109,13 @@ https://templatemo.com/tm-570-chain-app-dev
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
-              <li class="scroll-to-section"><a href="#services">Sobre Nosotros</a></li>
-              <li class="scroll-to-section"><a href="#about">Clases</a></li>
+              <li class="scroll-to-section"><a href="#services">Servicios</a></li>
+              <li class="scroll-to-section"><a href="#about">Sobre Nosotros</a></li>
               <li class="scroll-to-section"><a href="#pricing">Ubicaciones</a></li>
-              <li class="scroll-to-section"><a href="#newsletter">Comunidad</a></li>
-              <li class="scroll-to-section"><a href="#newsletter">Contacto</a></li>      
+        
+               
 
-              <!-- <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li>  -->
+              <li><div class="gradient-button scroll-to-section"><a href="#newsletter">Contacto</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -299,9 +341,9 @@ https://templatemo.com/tm-570-chain-app-dev
               </div>
             </div>
             <div class="col-lg-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p> -->
               <div class="gradient-button">
-                <a href="#">Clase de Prueba</a>
+                <a>¡Agende una Clase de Prueba!</a>
               </div>
               <span></span>
             </div>
@@ -566,7 +608,7 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Clases y <em>Ubicaciones</em> </h4>
+            <h4>Clases - <em>Ubicaciones</em> </h4>
             <img src="assets/images/heading-line-dec.png" alt="">
             <p>Contamos con los siguientes horarios disponibles</p>
           </div>
@@ -653,27 +695,29 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+            <h4>Contáctenos</h4>
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-3">
+        <div class="col-lg-6 offset-lg-4">
           <form id="search" action="#" method="GET">
             <div class="row">
               <div class="col-lg-6 col-sm-6">
                 <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                  <h5 class="text-white">Teléfono</h5><br /> 
+                  <h5 class="text-white">Correo</h5><br /> 
+                  <h5 class="text-white">Facebook</h5>
                 </fieldset>
               </div>
               <div class="col-lg-6 col-sm-6">
-                <fieldset>
-                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
-                </fieldset>
+                <h5 class="text-white">8869 0548</h5><br /> 
+                <h5 class="text-white">mileanrr@hotmail.com</h5><br /> 
+                <h5 class="text-white"><a class="text-white" href="https://www.facebook.com/profile.php?id=100057155332366"  target="_blank">Everest Náutica Escuela de Natación</a> </h5>
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="row">
+<!--       <div class="row">
         <div class="col-lg-3">
           <div class="footer-widget">
             <h4>Contact Us</h4>
@@ -731,7 +775,7 @@ https://templatemo.com/tm-570-chain-app-dev
           <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </footer>
 
